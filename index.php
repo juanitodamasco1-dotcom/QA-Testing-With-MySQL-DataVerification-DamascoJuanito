@@ -6,9 +6,10 @@ $servername = "localhost";
 $username   = "root";
 $password   = "";
 $dbname     = "birthday_wishnote";
+$port = 3306;
 
 mysqli_report(MYSQLI_REPORT_OFF); // handle errors manually below
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 $successMessage = "";
 $errorMessage   = "";
